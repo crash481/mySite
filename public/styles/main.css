@@ -1,0 +1,368 @@
+html{
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	background-color: rgb(254,251,245);
+	min-width: 800px;
+	
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	width:100%;
+	position: relative;
+	min-width: 800px;
+}
+
+
+
+header{
+	width:800px;
+	margin: auto;
+	height: 200px;
+}
+
+.mainWindow{
+	margin:auto;
+	position:relative;
+	top:-90px;
+	width:800px;
+}
+
+.content{
+	border: 4px solid rgb(89,66,54);
+	border-radius: 10px;
+	width:624px;
+	margin: auto;
+	min-height: 400px;
+	float:left;
+	margin-left: 18px;
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+
+.menu a div{
+
+}
+
+footer{
+	background-color: white;
+		position: relative;
+	margin: auto;
+	width:800px;
+	height: 250px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+}
+
+
+.logo{
+	font-family: serif;
+	font-style: italic;
+	font-variant: small-caps;
+	margin-left: 30px;
+	margin-top: 40px;
+	font-size: 50px;
+	float: left;
+}
+
+.contacts{
+	width:310px;
+	float: right;
+	position:relative;
+	top:40px;
+	right:50px;
+}
+
+.number{
+	font-size: 27px;
+	font-variant: small-caps;
+	font-style: oblique;
+	margin-top: 12px;
+	float: right;
+}
+
+menu{
+	width:699px;
+	height:60px;
+	border: 3px solid rgb(84,61,48);
+	margin: auto;
+	padding: 0px;
+	border-radius: 10px;	
+	
+	
+}
+
+.menu_button{
+	
+	color:rgb(84,61,48);
+	font-size: 22px;
+	font-variant: small-caps;
+	font-family:Philosopher;
+	font-weight: bold;
+	float: left;
+	width:231px;
+	height: 100%;
+	text-align: center;
+	line-height: 60px;
+	border-right:3px solid rgb(84,61,48);
+	background-color: transparent;
+	
+	  position: relative;
+	z-index: 100;
+	
+	
+	
+}
+
+
+.menu2{
+	padding-top:20px;
+	width:150px;
+	height:400px;
+	float:left;
+	background-color: rgb(132,151,64);
+	border-radius: 10px;
+}
+
+.menu2 a{
+	text-decoration: none;
+}
+
+.menu2 div{
+	color:white;
+	line-height: 40px;
+	height:50px;
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	font-style: normal;
+	font-family: serif;
+	margin-top:10px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px ;
+	font-family:Lobster;
+	font-weight: lighter;
+	
+}
+
+.preimushestva{
+	width: 632px;
+	background-color: rgb(89,66,54);
+	height: 250px;
+	margin-left: 18px;
+	float: left;
+	border-radius: 10px;
+	color:white;	
+	
+}
+
+.preimushestva h1{
+	margin-left:50px;
+	margin-top: 20px;
+	font-style: oblique;
+	font-family: sans-serif;
+	font-weight: lighter
+}
+
+.preimushestva div{
+	
+	width: 255px;
+	height: 80px;
+	font-size: 23px;
+	font-family:Philosopher;
+	font-weight: lighter;
+	float:left;
+	margin-left:20px;
+	margin-top: 5px;
+}
+
+.tail{
+	width: 200px;
+	height: 200px;
+	border: 2px solid rgb(132,151,64);
+	border-radius: 4px;
+	margin: 2px;
+	float:left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.tailImg{
+	width:201px;
+	height:134px;
+
+}
+
+.tail h4{
+	margin-top: 0px;
+}
+
+.tail p{
+	margin-top: -20px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.tail .closeImg {
+	width:50px;
+	height: 50px;
+	position: fixed;
+	z-index: 99999;
+
+}
+
+.tail .zoomImg{
+
+	width:50px;
+	height:50px;
+	margin:auto;
+	position:relative;
+	bottom:150px;
+	opacity: 0.5;
+}
+
+.background1{
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	display:none;
+	top: 0px;
+	left: 0px;
+}
+
+.deliveryImg{
+	border-radius: 10px;
+	width:624px;
+}
+
+.Ymap{
+	width:400px;
+	border: 3px solid rgb(89,66,54);
+	border-radius: 5px;
+	position:relative;
+	float:right;
+	right: 10px;
+	top:0px;
+	overflow: hidden;
+}
+
+
+/* Начало ДЛЯ СЛАЙДЕРА */
+
+
+ .slides {
+      display: none;
+	  margin-top:20px;
+	  position: relative;
+	  bottom:20px;
+	  z-index: 0;
+	  margin-bottom: 30px;
+	 border-top: 3px solid rgb(89,66,54);
+	 border-bottom: 3px solid rgb(89,66,54);
+    }
+    
+    			
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    
+        
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(../img/slider/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:none;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    a.slidesjs-next {
+    	
+      margin-right:5px;
+      background-position: -12px 0;
+           
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+            margin-left:10%;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      margin-right:10%;
+      float: right;
+      list-style: none;
+            display:none;
+
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../img/slider/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+  
+    }																						/* ДЛЯ СЛАЙДЕРА */
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+  
+  /* Конец ДЛЯ СЛАЙДЕРА */
+    
+    

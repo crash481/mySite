@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <title> <%=title %> </title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Мебель, Кухни, Диваны, Кресла, Гостинная">
+    <meta name="description" content="Качественная мебель по доступным ценам">
+    <link href="" rel="shortcut icon" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="styles/main.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Philosopher:400,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"> </script>
+    <script type="text/javascript" src="js/jquery.color-2.1.0.min.js"> </script>
+    <script type="text/javascript" src="js/jquery.slides.min.js"> </script>
+
+
+</head>
+
+<body>
+<header>
+    <h1 class="logo"> Наша мебель </h1>
+    <div class="contacts">
+        <img src="img/phone.png" >
+        <p class="number"> +7 (123) <b> 123 - 23 - 34 </b> </p>
+    </div>
+
+    <div style = "clear:both;"></div>
+
+    <menu>
+       <a href="\"> <div class="menu_button"> Главная </div> </a>
+        <a href="\service"> <div class="menu_button"> Доставка и услуги </div> </a>
+        <a href="\contacts"> <div class="menu_button" style="border:0px;"> Контакты </div> </a>
+
+    </menu>
+
+
+</header>
+
+
+
+
+<div class="slides">
+    <img src="img/slider/1.jpg">
+    <img src="img/slider/2.jpg">
+    <img src="img/slider/3.jpg">
+</div>
+
+
+
+<div class="mainWindow" >
+
+    <%- partial('../partials/leftMenu') -%>
+
+    <script>
+        $(".menu2 div").hover(
+                function(){
+                    $(this).stop().animate({width:"110%",backgroundColor:"rgb(179,197,97)"},300);
+                },
+                function(){
+                    $(this).stop().animate({width:"100%", backgroundColor: "transparent"},300);
+                });
+    </script>
+
+    <%- partial('../partials/preimushestva') -%>
+
+
+    <div class="content">
+        <%- body -%>
+
+    </div>
+
+
+    <div style="clear:both"> </div>
+</div>
+
+
+<footer>
+    <div style = "width:288px; 	background-color: rgb(132,151,64);height: 250px; border-top-left-radius:10px; color:white;border:1px solid transparent; float:left; ">
+        <h1 style=" margin-left: 40px; margin-top: 50px; font-size:30px; font-family:Lobster; " > Контакты: </h1>
+        <p style="font-size:25px; text-align:center;  "> +7 (123) <b> 123 - 23 - 34 </b> </p>
+        <pre style="font-size:20px; text-align:center; font-family:Philosopher;"> г. Севастополь</pre>
+    </div>
+
+    <img src="img/map.png" height="242px" width="500px" style="border:5px solid rgb(132,151,64); border-top-right-radius:10px;">
+</footer>
+
+
+<div class="background1"> </div>
+</body>
+<script type="text/javascript" src="js/main.js"> </script>
+
+
+</html>
+

@@ -1,0 +1,35 @@
+<% layout ('/layout/main') -%>
+
+
+<script>
+
+    if("<%=pageCategory%>"=="sofa") {
+        $(".menu2 a").eq(0).children("div").css({width: "110%", backgroundColor: "rgb(179,197,97)"}).off();
+    }
+    if("<%=pageCategory%>"=="chair") {
+        $(".menu2 a").eq(1).children("div").css({width: "110%", backgroundColor: "rgb(179,197,97)"}).off();
+    }
+    if("<%=pageCategory%>"=="corner") {
+        $(".menu2 a").eq(2).children("div").css({width: "110%", backgroundColor: "rgb(179,197,97)"}).off();
+    }
+    if("<%=pageCategory%>"=="compact") {
+        $(".menu2 a").eq(3).children("div").css({width: "110%", backgroundColor: "rgb(179,197,97)"}).off();
+    }
+</script>
+
+
+<% furniture.forEach(function(element,index,array){
+   if(element.category==pageCategory){
+
+    tailName = element.name;
+    tailDescription = element.description;
+    tailImgPath = element.imgPath.substr(element.imgPath.indexOf('img/upload/'));
+    tailCategory = element.category;
+%>
+
+   <%- partial('partials/tail') -%>
+
+<% } }); %>
+
+
+
